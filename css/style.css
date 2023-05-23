@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Inter&family=Poppins:wght@300;400&display=swap');
 
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -59,11 +60,19 @@
 }
 
 html {
-    font-family: Poppims;
+    font-family: Poppins;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: black;
 }
+
+/* .dropdown-hover:hover>.dropdown-menu {
+    display: inline-block;
+}
+
+.dropdown-hover>.dropdown-toggle:active {
+    pointer-events: none;
+} */
 
 /* reset styles */
 * {
@@ -125,7 +134,7 @@ i {
 }
 
 input[type="checkbox"] {
-    display: none;
+    /* display: none; */
 }
 
 .grid {
@@ -145,7 +154,10 @@ header {
 .header-nav {
     padding: 0 7%;
 }
-
+#header-nav{
+    overflow-y: scroll;
+    height: 300px;
+}
 .icons a i {
     font-size: 1.5rem;
 }
@@ -161,8 +173,15 @@ header {
     /* background-color: var(--red); */
 }
 
+.link li a.clicked {
+    color: var(--green);
+    background-color: var(--orange);
+    padding: 0.5em;
+    font-weight: bold;
+}
+
 .icons .input-control input {
-    border: none;
+    border: 2px solid var(--light);
     background-color: var(--light);
     border-radius: 25px;
     padding: 0.5em;
@@ -189,8 +208,8 @@ header {
 
 /* PERCENTAGE */
 .percentage {
-    background: linear-gradient(to left, #F15D6F, var(--purple));
-    padding: 120px 0 10px;
+    background: linear-gradient(to right, var(--orange), var(--black));
+    padding: 200px 0 10px;
     text-align: center;
 }
 
@@ -324,7 +343,7 @@ header {
 }
 
 .categories__item.categories__large__item .categories__text img {
-    width: 50%;
+    width: 30%;
 }
 
 .categories__item.categories__large__item .categories__text p {
@@ -351,7 +370,7 @@ header {
 
 .categories__text a {
     font-size: 14px;
-    color: #F15D6F;
+    color: var(--orange);
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
@@ -365,7 +384,7 @@ header {
     bottom: 0;
     height: 2px;
     width: 100%;
-    background: #F15D6F;
+    background: orange;
     content: "";
 }
 
@@ -379,6 +398,7 @@ header {
     padding: 4em 2em 2em;
     text-align: center;
     margin: 0 auto;
+    font-family: 'GFS Didot', serif;
 }
 
 .services .heading {
@@ -482,7 +502,7 @@ header {
 /* FOOTER SECTION */
 
 footer {
-    background-color: var(--dark);
+    background-color: var(--black);
     padding: 1.5em 1.5em 2em;
 }
 
@@ -689,24 +709,34 @@ footer img {
     .social-icon {
         justify-content: center;
     }
-
+    
     .footer-text h5 img {
         width: 10%;
     }
+    
+    .percentage h1 {
+        font-size: 2.5rem;
+    }
 }
 
+@media only screen and (min-width:991px) {
+    #header-nav{
+        overflow-y: hidden;
+        height: auto;
+    }
+}
 @media only screen and (min-width:1000px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         max-width: 90%;
     }
-
+    
     .grid-container img {
         height: 40vh;
         object-fit: cover;
     }
-
+    
     .grid-1 img,
     .grid-2 img,
     .grid-3 img {
@@ -726,7 +756,7 @@ footer img {
 } */
 
 @media only screen and (min-width:1200px) {
-
+    
     .hero-grid img,
     .hero-grid-1 img {
         height: 90vh;
@@ -738,7 +768,7 @@ footer img {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         max-width: 90%;
     }
-
+    
     .grid-container img {
         height: 50vh;
         object-fit: cover;
