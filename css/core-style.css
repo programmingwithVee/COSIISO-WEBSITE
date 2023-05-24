@@ -496,6 +496,7 @@ img {
 .main-content-wrapper {
   position: relative;
   z-index: 1;
+  padding: 30px 0 0;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -ms-flex-wrap: wrap;
@@ -760,12 +761,16 @@ img {
   .widget .catagories-menu ul {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 1px solid black;
-    padding-bottom: 1em;
+    gap: 10px;
   }
 
-  .widget .catagories-menu ul li button a {
-    font-size: 0.6875rem;
+  .widget .catagories-menu ul li a {
+    line-height: 1;
+    border-bottom: none;
+  }
+
+  .widget .catagories-menu ul li a {
+    font-size: 0.8875rem;
   }
 }
 
@@ -773,11 +778,11 @@ img {
   position: relative;
   z-index: 1;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 calc(95% - 250px);
-  flex: 0 0 calc(95% - 250px);
-  width: calc(95% - 250px);
+  -ms-flex: 0 0 calc(100% - 250px);
+  flex: 0 0 calc(100% - 250px);
+  width: calc(100% - 250px);
   margin: 0 auto;
-  max-width: calc(95% - 250px);
+  max-width: calc(100% - 250px);
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -793,10 +798,10 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main-content-wrapper .amado_product_area {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(100% - 200px);
-    flex: 0 0 calc(100% - 200px);
-    width: calc(100% - 200px);
-    max-width: calc(100% - 200px);
+    -ms-flex: 0 0 calc(100% - 250px);
+    flex: 0 0 calc(100% - 250px);
+    width: calc(100% - 250px);
+    max-width: calc(100% - 250px);
   }
 }
 
@@ -804,7 +809,7 @@ img {
   .main-content-wrapper .amado_product_area {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 80%;
-    flex: 0 0 80%;
+    flex: 0 0 95%;
     margin: 0 auto;
     width: 100%;
     max-width: 100%;
@@ -1710,7 +1715,9 @@ img {
   font-size: 1rem;
   /* padding: 15px 0 15px 20px; */
   display: block;
-  line-height: 3;
+  border-bottom: 1px solid var(--bg-1);
+  text-align: center;
+  line-height: 4;
   font-weight: 400;
   color: black;
 }
@@ -1720,8 +1727,9 @@ img {
   color: var(--orange);
 }
 
-.widget .catagories-menu li button a.active {
+.widget .catagories-menu li a.active {
   color: var(--orange);
+  font-weight: bold;
 }
 
 .widget.price .slider-range-price {

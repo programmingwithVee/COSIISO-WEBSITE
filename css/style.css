@@ -156,7 +156,7 @@ header {
 }
 #header-nav{
     overflow-y: scroll;
-    height: 300px;
+    height: 400px;
 }
 .icons a i {
     font-size: 1.5rem;
@@ -209,7 +209,7 @@ header {
 /* PERCENTAGE */
 .percentage {
     background: linear-gradient(to right, var(--orange), var(--black));
-    padding: 200px 0 10px;
+    padding: 150px 0 10px;
     text-align: center;
 }
 
@@ -502,7 +502,7 @@ header {
 /* FOOTER SECTION */
 
 footer {
-    background-color: var(--black);
+    background-color: var(--light);
     padding: 1.5em 1.5em 2em;
 }
 
@@ -512,13 +512,12 @@ footer {
 }
 
 footer h5 {
-    color: var(--white);
+    color: var(--black);
 }
 
 footer img {
     width: 20%;
 }
-
 .social-icon {
     border-bottom: 1px solid var(--black);
     padding-bottom: 0.5em;
@@ -546,7 +545,7 @@ footer img {
 
 .social-icon a i {
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--black);
 }
 
 /* arrow SECTION */
@@ -711,11 +710,11 @@ footer img {
     }
     
     .footer-text h5 img {
-        width: 10%;
+        width: 5%;
     }
     
     .percentage h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -723,6 +722,9 @@ footer img {
     #header-nav{
         overflow-y: hidden;
         height: auto;
+    }
+    .percentage{
+        padding: 200px 0 10px;
     }
 }
 @media only screen and (min-width:1000px) {
