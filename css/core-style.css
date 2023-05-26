@@ -6,20 +6,7 @@
 @import url(../css/jquery-ui.min.css);
 @import url(../css/nice-select.css);
 @import url(../icomoon/style.css);
-
-@font-face {
-  font-family: 'helveticaneuebold';
-  src: url("../fonts/helvetica_neu_bold-webfont.woff2") format("woff2"), url("../fonts/helvetica_neu_bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'helveticaneuemedium';
-  src: url("../fonts/helveticaneue_medium-webfont.woff2") format("woff2"), url("../fonts/helveticaneue_medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url(../css/slicknav.min.css);
 
 /* :: 2.0 Import All CSS */
 /* :: 3.0 Base CSS */
@@ -1055,13 +1042,15 @@ img {
 }
 
 .main-content-wrapper .single-product-area {
+  padding: 130px 0 0;
   position: relative;
   z-index: 1;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 calc(95% - 320px);
   flex: 0 0 calc(95% - 320px);
-  width: calc(95% - 320px);
-  max-width: calc(95% - 320px);
+  width: calc(95% - 120px);
+  margin: 0 auto;
+  max-width: calc(95% - 120px);
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1200,7 +1189,7 @@ img {
 }
 
 .main-content-wrapper .single-product-area .single_product_desc .product-meta-data .product-price {
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--orange);
   line-height: 1;
@@ -1219,6 +1208,10 @@ img {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-content-wrapper .single-product-area .single_product_desc .product-meta-data a h6 {
     font-size: 20px;
+  }
+  .main-content-wrapper .single-product-area .single_product_desc .product-meta-data a h3 {
+    font-size: 5rem;
+    color: green;
   }
 }
 
@@ -1559,8 +1552,9 @@ img {
 
 .single-product-wrapper .product-description .product-meta-data .product-price {
   line-height: 1;
-  color: var(--orange);
-  font-size: 24px;
+  color: black;
+  font-size: 0.7875rem;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
@@ -1571,7 +1565,9 @@ img {
 .single-product-wrapper .product-description .product-meta-data a h6 {
   margin-bottom: 0;
 }
-
+.single-product-wrapper .product-description .ratings-cart {
+  
+}
 .single-product-wrapper .product-description .ratings-cart .ratings i {
   font-size: 10px;
   color: var(--orange);
@@ -1584,8 +1580,25 @@ img {
 .single-product-wrapper:hover .product-img .hover-img {
   opacity: 1;
   visibility: visible;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
 }
-
+.single-product-wrapper:hover .product-img .hover-img .hover-button {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  text-align: center;
+  padding: 60% 0;
+  margin: 0 auto;
+}
+.single-product-wrapper:hover .product-img .hover-img .hover-button button {
+text-align: center;
+background-color: var(--orange);
+border: none;
+padding: 0.5em 0.7em;
+color: white;
+font-weight: bold;
+font-size: 1.1rem;
+}
 .single-product-wrapper:hover .product-img .product-favourite a {
   opacity: 1;
   visibility: visible;

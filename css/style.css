@@ -141,7 +141,6 @@ input[type="checkbox"] {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
-
 /* HEADER SECTION */
 header {
     position: fixed;
@@ -152,7 +151,7 @@ header {
 }
 
 .header-nav {
-    padding: 0 7%;
+    padding: 0 1%;
 }
 #header-nav{
     overflow-y: scroll;
@@ -174,7 +173,7 @@ header {
 }
 
 .link li a.clicked {
-    color: var(--green);
+    color: var(--white);
     background-color: var(--orange);
     padding: 0.5em;
     font-weight: bold;
@@ -208,14 +207,15 @@ header {
 
 /* PERCENTAGE */
 .percentage {
-    background: linear-gradient(to right, var(--orange), var(--black));
-    padding: 150px 0 10px;
+    background: var(--black);
+    padding: 130px 0 10px;
     text-align: center;
 }
 
 .percentage h1 {
     color: var(--white);
     font-weight: bolder;
+    font-size: 1.5rem;
 }
 
 .percentage p {
@@ -395,7 +395,7 @@ header {
 }
 
 .services {
-    padding: 4em 2em 2em;
+    padding: 2em 2em 0em;
     text-align: center;
     margin: 0 auto;
     font-family: 'GFS Didot', serif;
@@ -519,7 +519,7 @@ footer img {
     width: 20%;
 }
 .social-icon {
-    border-bottom: 1px solid var(--black);
+    /* border-bottom: 1px solid var(--black); */
     padding-bottom: 0.5em;
     display: flex;
     gap: 30px;
@@ -528,7 +528,7 @@ footer img {
 .payment {
     margin: 1em 0;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid var(--black);
+    /* border-bottom: 1px solid var(--black); */
 }
 
 .methods a img {
@@ -786,3 +786,17 @@ footer img {
 
 
 /* OTHER CSS */
+
+/* PRODUCT-DETAILS PAGE */
+
+.search-switch {
+	display: block;
+	height: 100%;
+	font-size: 1.5rem;
+    margin-right: 3%;
+	text-align: center;
+	cursor: pointer;
+}
+.input-controls{
+    margin-right: 5%;
+}

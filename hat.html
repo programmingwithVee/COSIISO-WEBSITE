@@ -6,19 +6,26 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Document</title>
+    <title>COSIISO</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./icomoon/style.css">
-    <link rel="stylesheet" href="./css/style (3).css">
+    <link rel="stylesheet" href="./css/style (2).css">
     <link rel="stylesheet" href="./css/core-style.css">
     <link rel="stylesheet" href="./css/fonts-2.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="shortcut icon" href="./images/cosi-logo.png" type="image/x-icon">
 </head>
 
 <body>
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Header Section Begin -->
     <header>
         <div class="top-header">
             <ul class="nav justify-content-end">
@@ -29,104 +36,82 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sign up</a>
                 </li>
+                <li>
+                    <!-- Avatar -->
+                    <div class="dropdown">
+                        <a class="link-dark me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                                <a class="dropdown-item" href="#">My profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
 
         <div class="fixed-header">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-white header-nav">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light header-nav">
                 <!-- Container wrapper -->
                 <div class="container-fluid">
-                    <!-- Toggle button -->
                     <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
                         data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
+                        <i class="icon-bars"></i>
                     </button>
-
+                    <!-- Toggle button -->
+                    <a class="navbar-brand logo" href="./index.html">
+                        <img src="./images/cosi-logo.png" height="50" alt="MDB Logo" loading="lazy" />
+                    </a>
                     <!-- Collapsible wrapper -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <a class="navbar-brand mt-2 mt-lg-0" href="./index.html">
-                            <img src="./images/cosi-logo.png" height="50" alt="MDB Logo" loading="lazy" />
-                        </a>
-                        <!-- Navbar brand -->
                         <!-- Left links -->
-                        <ul class="navbar-nav mb-2 mb-lg-0 link">
+                        <ul class="navbar-nav me-auto ps-lg-0 link" style="padding-left: 0.15rem">
                             <li class="nav-item">
                                 <a class="nav-link clicked" href="./index.html">Woman</a>
                             </li>
+                            <!-- Navbar dropdown -->
                             <li class="nav-item">
-                                <a class="nav-link" href="./men-banner.html">Men</a>
+                                <a class="nav-link" href="./men-banner.html">
+                                    Men
+                                </a>
+                                <!-- Dropdown menu -->
                             </li>
                         </ul>
                         <!-- Left links -->
                     </div>
                     <!-- Collapsible wrapper -->
-
                     <!-- Right elements -->
-                    <div class="d-flex align-items-center icons">
-                        <!-- Search -->
-                        <div class="input-control">
-                            <input type="text" name="" id="" placeholder="Search">
-                            <i class="icon-search"></i>
-                        </div>
-                        <!-- Avatar -->
-                        <div class="dropdown">
-                            <a class="link-dark me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-heart"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
-                                <li>
-                                    <a class="dropdown-item" href="#">My profile</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Settings</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Logout</a>
-                                </li>
-                            </ul>
-                        </div>
 
+                    <div class="header__right">
+                        <ul class="header__right__widget">
+                            <li><span class="icon-search search-switch"></span></li>
+                            <!-- <li><a href="#"><span class="icon-heart"></span>
+                                <div class="tip">2</div>
+                            </a></li> -->
+                            <li><a href="./cart.html"><span class="icon-shopping-bag"></span>
+                                    <div class="tip">2</div>
+                                </a></li>
 
-                        <!-- Icon -->
-                        <a class="link-dark me-3" href="#">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-
-
-                        <!-- Notifications -->
-                        <div class="dropdown">
-                            <a class="link-dark me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user"></i>
-                                <span class="badge rounded-pill badge-notification bg-danger">1</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                                <li>
-                                    <a class="dropdown-item" href="#">Some news</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Another news</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
-                    <!-- Right elements -->
                 </div>
                 <!-- Container wrapper -->
             </nav>
-            <!-- Navbar -->
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light header-nav">
                 <!-- Container wrapper -->
                 <div class="container-fluid">
-                    <!-- Toggle button -->
-
                     <!-- Collapsible wrapper -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left links -->
@@ -162,9 +147,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./women-shoes.html">Shoes</a>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link clicked" href="./accessories.html">Accessories</a>
+                                <a class="nav-link" href="./accessories.html">Accessories</a>
                             </li>
                         </ul>
                         <!-- Left links -->
@@ -175,6 +159,7 @@
             </nav>
         </div>
     </header>
+    <!-- Header Section End -->
 
     <div class="percentage">
         <h1>UP TO +30% OFF OUTLET STUFF!</h1>
@@ -254,7 +239,8 @@
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="./images/bucket-hats/1649296555404260c936e5489b90d804c712167ba3_thumbnail_900x.webp" alt="">
+                                <img src="./images/bucket-hats/1649296555404260c936e5489b90d804c712167ba3_thumbnail_900x.webp"
+                                    alt="">
                                 <!-- Hover Thumb -->
                                 <img class="hover-img" src="./images/jeans/200875839-2.webp" alt="">
                             </div>
@@ -914,6 +900,17 @@
             </h5>
         </div>
 
+        <!-- Search Begin -->
+        <div class="search-model">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+                <div class="search-close-switch">+</div>
+                <form class="search-model-form">
+                    <input type="text" id="search-input" placeholder="Search here.....">
+                </form>
+            </div>
+        </div>
+        <!-- Search End -->
+
     </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
@@ -921,7 +918,7 @@
     <script src="./js/popper.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main (2).js"></script>
     <script src="./js/plugins.js"></script>
     <script src="./js/active.js"></script>
 </body>

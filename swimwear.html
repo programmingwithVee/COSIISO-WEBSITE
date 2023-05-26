@@ -6,19 +6,26 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Document</title>
+    <title>COSIISO</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./icomoon/style.css">
-    <link rel="stylesheet" href="./css/style (3).css">
+    <link rel="stylesheet" href="./css/style (2).css">
     <link rel="stylesheet" href="./css/core-style.css">
     <link rel="stylesheet" href="./css/fonts-2.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="shortcut icon" href="./images/cosi-logo.png" type="image/x-icon">
 </head>
 
 <body>
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Header Section Begin -->
     <header>
         <div class="top-header">
             <ul class="nav justify-content-end">
@@ -29,103 +36,82 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sign up</a>
                 </li>
+                <li>
+                    <!-- Avatar -->
+                    <div class="dropdown">
+                        <a class="link-dark me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                                <a class="dropdown-item" href="#">My profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
 
         <div class="fixed-header">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-white header-nav">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light header-nav">
                 <!-- Container wrapper -->
                 <div class="container-fluid">
-                    <!-- Toggle button -->
                     <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
                         data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
+                        <i class="icon-bars"></i>
                     </button>
-
+                    <!-- Toggle button -->
+                    <a class="navbar-brand logo" href="./index.html">
+                        <img src="./images/cosi-logo.png" height="50" alt="MDB Logo" loading="lazy" />
+                    </a>
                     <!-- Collapsible wrapper -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <a class="navbar-brand mt-2 mt-lg-0" href="./index.html">
-                            <img src="./images/cosi-logo.png" height="50" alt="MDB Logo" loading="lazy" />
-                        </a>
-                        <!-- Navbar brand -->
                         <!-- Left links -->
-                        <ul class="navbar-nav mb-2 mb-lg-0 link">
+                        <ul class="navbar-nav me-auto ps-lg-0 link" style="padding-left: 0.15rem">
                             <li class="nav-item">
                                 <a class="nav-link clicked" href="./index.html">Woman</a>
                             </li>
+                            <!-- Navbar dropdown -->
                             <li class="nav-item">
-                                <a class="nav-link" href="./men-banner.html">Men</a>
+                                <a class="nav-link" href="./men-banner.html">
+                                    Men
+                                </a>
+                                <!-- Dropdown menu -->
                             </li>
                         </ul>
                         <!-- Left links -->
                     </div>
                     <!-- Collapsible wrapper -->
-
                     <!-- Right elements -->
-                    <div class="d-flex align-items-center icons">
-                        <!-- Search -->
-                        <div class="input-control">
-                            <input type="text" name="" id="" placeholder="Search">
-                            <i class="icon-search"></i>
-                        </div>
-                        <!-- Avatar -->
-                        <div class="dropdown">
-                            <a class="link-dark me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-heart"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
-                                <li>
-                                    <a class="dropdown-item" href="#">My profile</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Settings</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Logout</a>
-                                </li>
-                            </ul>
-                        </div>
 
+                    <div class="header__right">
+                        <ul class="header__right__widget">
+                            <li><span class="icon-search search-switch"></span></li>
+                            <!-- <li><a href="#"><span class="icon-heart"></span>
+                                <div class="tip">2</div>
+                            </a></li> -->
+                            <li><a href="./cart.html"><span class="icon-shopping-bag"></span>
+                                    <div class="tip">2</div>
+                                </a></li>
 
-                        <!-- Icon -->
-                        <a class="link-dark me-3" href="#">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-
-
-                        <!-- Notifications -->
-                        <div class="dropdown">
-                            <a class="link-dark me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user"></i>
-                                <span class="badge rounded-pill badge-notification bg-danger">1</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                                <li>
-                                    <a class="dropdown-item" href="#">Some news</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Another news</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
-                    <!-- Right elements -->
                 </div>
                 <!-- Container wrapper -->
             </nav>
-            <!-- Navbar -->
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light header-nav">
                 <!-- Container wrapper -->
                 <div class="container-fluid">
-                    <!-- Toggle button -->
                     <!-- Collapsible wrapper -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left links -->
@@ -155,7 +141,7 @@
                                 <a class="nav-link" href="./skirts.html">Skirts</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link clicked" href="./swimwear.html">Swimwear & Beachwear</a>
+                                <a class="nav-link" href="./swimwear.html">Swimwear & Beachwear</a>
                             </li>
 
                             <li class="nav-item">
@@ -173,6 +159,7 @@
             </nav>
         </div>
     </header>
+    <!-- Header Section End -->
 
     <div class="percentage">
         <h1>UP TO +30% OFF OUTLET STUFF!</h1>
@@ -258,20 +245,13 @@
                                 <img class="hover-img"
                                     src="./images/beach/16221782863942df51cff55d9e9af80125e3f24a25_thumbnail_900x.webp"
                                     alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -280,19 +260,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$7.48</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6>
-                                            Bikini Set Crisscross Halter Wireless Bra Top & High Cut Bikini Bottom &
-                                            Mesh Cover Up Pants 3 Piece Swimsuit</h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="cart">
-                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                            title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -309,20 +283,13 @@
                                 <img class="hover-img"
                                     src="./images/beach/1673487006de26344299bf6d1d786e5701c0e3d04a_thumbnail_900x.webp"
                                     alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -331,20 +298,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$242.00</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6>
-                                            Tropical & Letter Graphic Contrast Binding One Piece Swimsuit</h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="ratings-cart text-right">
-                                        <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                                title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                        </div>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -361,20 +321,13 @@
                                 <img class="hover-img"
                                     src="./images/beach/1659060131e0a4abcb6eb6bef2dce0f9e8455a2eb2_thumbnail_900x.webp"
                                     alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -383,19 +336,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$126.00</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6>3pack Random Tropical Print Halter Drawstring Side Bikini Swimsuit</h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="ratings-cart text-right">
-                                        <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                                title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                        </div>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -412,20 +359,13 @@
                                 <img class="hover-img"
                                     src="./images/beach/1678941523821cc001721542712dbdc7c0750fb7b9_thumbnail_900x.webp"
                                     alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -434,20 +374,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$12.99</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6>
-                                            Tropical Print Fringe Trim Push Up Bikini Swimsuit With Beach Skirt</h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="ratings-cart text-right">
-                                        <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                                title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                        </div>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -464,20 +397,13 @@
                                 <img class="hover-img"
                                     src="./images/beach/1679702452dc1ee01b9b114c0fe202244bd26f122b_thumbnail_900x.webp"
                                     alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -486,20 +412,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$16.99</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6>Leopard Tankini Set Tank Top & Tummy Control Shorts 2 Piece Bathing Suit
-                                        </h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="ratings-cart text-right">
-                                        <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                                title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                        </div>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -516,20 +435,13 @@
                                 <img class="hover-img"
                                     src="./images/beach/1652771307cabc16583591957aebcca889a8058c73_thumbnail_900x.webp"
                                     alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -538,20 +450,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$15.99</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6>Floral & Plants Print Bikini Set Knot Front Cami Bra & Ring Linked High
-                                            Waisted Bottom 3 Piece Bathing Suit</h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="ratings-cart text-right">
-                                        <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                                title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                        </div>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -568,20 +473,13 @@
                                 <img class="hover-img"
                                     src="./images/beach/1676872365c8674836681c7c9f1be25e71ff09632c_thumbnail_900x.webp"
                                     alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -590,19 +488,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$11.99</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6> Tropical Print Ring Linked One Piece Swimsuit</h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="ratings-cart text-right">
-                                        <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                                title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                        </div>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -616,20 +508,13 @@
                                 <img src="./images/beach/204732607-1-glitterpink.webp" alt="">
                                 <!-- Hover Thumb -->
                                 <img class="hover-img" src="./images/beach/204732607-2.webp" alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -638,20 +523,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$15.49</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6>
-                                            glitter beach cover up with ring detail in pink</h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="ratings-cart text-right">
-                                        <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                                title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                        </div>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -665,20 +543,13 @@
                                 <img class="" src="./images/beach/201427757-1-black.webp" alt="">
                                 <!-- Hover Thumb -->
                                 <img class="hover-img" src="./images/beach/201427757-2.webp" alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -687,20 +558,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$17.00</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6>
-                                            monowire swimsuit with deep plunge cut out detail in black</h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="ratings-cart text-right">
-                                        <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                                title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                        </div>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -714,20 +578,13 @@
                                 <img src="./images/beach/203974932-1-neutral.webp" alt="">
                                 <!-- Hover Thumb -->
                                 <img class="hover-img" src="./images/beach/203974952-1-neutral.webp" alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -736,20 +593,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$21.00</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6>
-                                            bikini set in chocolate</h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="ratings-cart text-right">
-                                        <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                                title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                        </div>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -766,20 +616,13 @@
                                 <img class="hover-img"
                                     src="./images/beach/1637726194a900e711b2230aaf8c0620dd41de3d7c_thumbnail_900x.webp"
                                     alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -788,21 +631,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$120.00</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6>
-                                            Tropical Print One Piece Swimsuit With Cover Up Skirt
-                                        </h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="ratings-cart text-right">
-                                        <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                                title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                        </div>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -818,20 +653,13 @@
                                 <!-- Hover Thumb -->
                                 <img class="hover-img"
                                     src="./images/beach/1641781207de000d5c3caf22c6558b386bcc7e024c.webp" alt="">
-                            </div>
-
-                            <div class="widget color mt-lg-5 mt-md-5 mt-sm-5 mt-5">
-                                <div class="widget-desc">
-                                    <ul class="d-flex">
-                                        <li><a href="#" class="color1"></a></li>
-                                        <li><a href="#" class="color2"></a></li>
-                                        <li><a href="#" class="color3"></a></li>
-                                        <li><a href="#" class="color4"></a></li>
-                                        <li><a href="#" class="color5"></a></li>
-                                        <li><a href="#" class="color6"></a></li>
-                                        <li><a href="#" class="color7"></a></li>
-                                        <li><a href="#" class="color8"></a></li>
-                                    </ul>
+                                <div class="hover-img">
+                                    <div class="hover-button">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left"
+                                            title="Add to Cart">
+                                            <button>Add to Cart</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -840,20 +668,13 @@
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$14.49</p>
+                                    <h6>COSIISO</h6>
                                     <a href="product-details.html">
-                                        <h6>
-                                            Plain Contrast Mesh One Shoulder One Piece Swimsuit</h6>
+                                        <h3>
+                                            COSIISO Shirt - <span>Green</span>
+                                        </h3>
                                     </a>
-                                </div>
-                                <!-- Ratings & Cart -->
-                                <div class="ratings-cart text-right">
-                                    <div class="ratings-cart text-right">
-                                        <div class="cart">
-                                            <a href="cart.html" data-toggle="tooltip" data-placement="left"
-                                                title="Add to Cart"><i class="icon-shopping_cart"></i></a>
-                                        </div>
-                                    </div>
+                                    <p class="product-price">&#x20A6;3,000.00 NGN</p>
                                 </div>
                             </div>
                         </div>
@@ -926,6 +747,17 @@
             </h5>
         </div>
 
+        <!-- Search Begin -->
+        <div class="search-model">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+                <div class="search-close-switch">+</div>
+                <form class="search-model-form">
+                    <input type="text" id="search-input" placeholder="Search here.....">
+                </form>
+            </div>
+        </div>
+        <!-- Search End -->
+
     </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
@@ -934,6 +766,7 @@
     <script src="./js/script.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/main (2).js"></script>
     <script src="./js/plugins.js"></script>
     <script src="./js/active.js"></script>
 </body>
