@@ -208,7 +208,7 @@ header {
 /* PERCENTAGE */
 .percentage {
     background: var(--black);
-    padding: 130px 0 10px;
+    padding: 150px 0 10px;
     text-align: center;
 }
 
@@ -725,6 +725,9 @@ footer img {
     }
     .percentage{
         padding: 200px 0 10px;
+    }
+    #product-details{
+        padding: 350px 0 0;
     }
 }
 @media only screen and (min-width:1000px) {
