@@ -49,30 +49,6 @@ h6 {
 	font-weight: 400;
 }
 
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.3em;
-}
-
-h4 {
-    font-size: 1.2em;
-}
-
-h5 {
-    font-size: 1rem;
-}
-
-h6 {
-    font-size: 0.6875rem;
-}
-
 
 p {
 	font-size: 14px;
@@ -1144,7 +1120,7 @@ ol {
 	margin-bottom: 35px;
 }
 
-.product__item:hover .product__hover li {
+.product-img:hover .product__hover li {
 	opacity: 1;
 	top: 0;
 }
@@ -3612,6 +3588,9 @@ color: white;
 	}
 	.contact__content {
 		margin-bottom: 40px;
+	}
+	.header__right__widget li a, .header__right__widget li span{
+		font-size: 15px;
 	}
 }
 
