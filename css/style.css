@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Inter&family=Poppins:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Playfair:opsz,wght@5..1200,300&display=swap');
 
 :root {
     --blue: #007bff;
@@ -151,6 +152,11 @@ header {
     padding: 0 2%;
 }
 
+.logo {
+    text-align: center;
+    margin-left: 15%;
+}
+
 .icons a i {
     font-size: 1.5rem;
 }
@@ -207,7 +213,7 @@ header {
 /* PERCENTAGE */
 .percentage {
     background: var(--black);
-    padding: 140px 0 10px;
+    padding: 140px 10px 10px;
     text-align: center;
 }
 
@@ -738,6 +744,11 @@ footer img {
 
     #product-details {
         padding: 120px 0 0;
+    }
+
+    .logo {
+        text-align: center;
+        margin-left: 0%;
     }
 }
 
