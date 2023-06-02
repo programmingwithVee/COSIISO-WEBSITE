@@ -25,13 +25,7 @@
 			items: 1,
 			navText: [""],
 			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: 1
-				},
-				960: {
+				768: {
 					items: 2
 				},
 				1000: {

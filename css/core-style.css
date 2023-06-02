@@ -490,10 +490,6 @@ img {
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 767px) {
-  .main-content-wrapper {}
-}
-
 .main-content-wrapper .header-area {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
@@ -724,44 +720,55 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main-content-wrapper .shop_sidebar_area {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 180px;
-    flex: 0 0 180px;
-    width: 180px;
-    max-width: 180px;
+    -ms-flex: 0 0 100px;
+    flex: 0 0 100px;
+    width: 100px;
+    max-width: 100px;
     padding: 40px 15px 0px;
   }
 }
 
+.main-content-wrapper .shop_sidebar_area {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.widget .catagories-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.widget .catagories-menu ul li a {
+  line-height: 1;
+  border-bottom: none;
+}
+
+.widget .catagories-menu ul li a {
+  font-size: 1.3rem;
+}
 @media only screen and (max-width: 767px) {
-  .main-content-wrapper .shop_sidebar_area {
-    -webkit-box-flex: 0;
-    /* -ms-flex: 0 0 100%; */
-    flex: 0 0 100%;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    -webkit-box-ordinal-group: 0;
-    -ms-flex-order: 0;
-    order: 2;
-  }
-
-  .widget .catagories-menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .widget .catagories-menu ul li a {
-    line-height: 1;
-    border-bottom: none;
-  }
-
-  .widget .catagories-menu ul li a {
-    font-size: 0.8875rem;
-  }
 }
 
 .main-content-wrapper .amado_product_area {
+  position: relative;
+  z-index: 1;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(100% - 100px);
+  flex: 0 0 calc(100% - 100px);
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  max-width: calc(100% - 100px);
+}
+
+.main-content-wrapper .product-area {
   position: relative;
   z-index: 1;
   -webkit-box-flex: 0;
@@ -771,13 +778,23 @@ img {
   margin: 0 auto;
   max-width: calc(100% - 250px);
 }
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-content-wrapper .amado_product_area {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100% - 100px);
+    flex: 0 0 calc(100% - 100px);
+    width: calc(100% - 100px);
+    max-width: calc(100% - 100px);
+  }
+
+  .main-content-wrapper .product-area {
+    position: relative;
+    z-index: 1;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 calc(100% - 150px);
     flex: 0 0 calc(100% - 150px);
     width: calc(100% - 150px);
+    margin: 0 auto;
     max-width: calc(100% - 150px);
   }
 }
@@ -1502,7 +1519,6 @@ img {
 /* :: 7.0 Popular Products Area CSS */
 .single-product-wrapper {
   position: relative;
-  z-index: 1;
   margin-bottom: 50px;
   overflow: hidden;
   background-color: #ffffff;
@@ -1510,7 +1526,6 @@ img {
 
 .single-product-wrapper .product-img {
   position: relative;
-  z-index: 1;
   overflow: hidden;
 }
 
@@ -1531,7 +1546,6 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
   opacity: 0;
   visibility: hidden;
 }
@@ -1572,8 +1586,6 @@ img {
   font-size: 0.9875rem;
 }
 
-.single-product-wrapper .product-description .ratings-cart {}
-
 /* .single-product-wrapper .product-description .ratings-cart .ratings i {
   font-size: 80px;
   background-color: var(--orange);
@@ -1586,15 +1598,15 @@ img {
 .single-product-wrapper:hover .product-img .hover-img {
   opacity: 1;
   visibility: visible;
-  height: 100%;
 }
 
 .single-product-wrapper .product-img .hover-button {
-  height: 100%;
   text-align: center;
   position: absolute;
+  z-index: -1;
   top: 70%;
-  width: 100%;
+  height: 0%;
+  width: 0%;
   margin: 0 auto;
 }
 
@@ -1630,6 +1642,14 @@ img {
   font-size: 1.1rem;
 }
 
+@media only screen and (max-width:991px) {
+  .single-product-wrapper .product-img img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+}
 @media only screen and (max-width:586px) {
   .single-product-wrapper:hover .product-img .hover-img .hover-button button {
     padding: 0.5em 0.7em;
@@ -1692,9 +1712,9 @@ img {
     display: none;
     font-size: 0.7875rem;
   }
-  .single-product-wrapper .product-img img {
+   .single-product-wrapper .product-img img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     overflow: hidden;
     object-fit: cover;
   }
@@ -1881,7 +1901,7 @@ img {
 
 .widget.color .widget-desc ul {
   -ms-flex-wrap: wrap;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .widget.color .widget-desc ul li {
