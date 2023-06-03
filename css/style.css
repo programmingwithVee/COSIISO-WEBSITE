@@ -510,7 +510,7 @@ header {
 /* FOOTER SECTION */
 
 footer {
-    background-color: var(--light);
+    background-color: var(--white);
     padding: 1.5em 1.5em 2em;
     text-align: center;
 }
